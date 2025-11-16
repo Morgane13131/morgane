@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Morgane</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000000 !important;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            background-color: #000000;
+        }
+    </style>
+    <link rel="stylesheet" href="/styles.css?v=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <div class="hero-content">
+                <h1 class="artist-name">Morgane</h1>
+            </div>
+        </header>
+
+        <main class="content">
+            <section class="links-section">
+                <div class="links-grid">
+                    <div class="link-card streaming" data-platform="spotify">
+                        <div class="link-icon">
+                            <i class="fab fa-spotify"></i>
+                        </div>
+                        <span class="link-label">Spotify</span>
+                        <a href="https://open.spotify.com/intl-fr/artist/6a33TynljhV7QMa57EpWaW" class="link-overlay" target="_blank" rel="noopener noreferrer"></a>
+                    </div>
+
+                    <div class="link-card streaming" data-platform="deezer">
+                        <div class="link-icon">
+                            <i class="fab fa-deezer"></i>
+                        </div>
+                        <span class="link-label">Deezer</span>
+                        <a href="https://link.deezer.com/s/31AvajAoGuZqBhzoPx6vh" class="link-overlay" target="_blank" rel="noopener noreferrer"></a>
+                    </div>
+
+                    <div class="link-card streaming" data-platform="youtube">
+                        <div class="link-icon">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <span class="link-label">YouTube</span>
+                        <a href="https://www.youtube.com/channel/UCY4shSUWwNGPQAl6O5G2D5w" class="link-overlay" target="_blank" rel="noopener noreferrer"></a>
+                    </div>
+
+                    <div class="link-card streaming" data-platform="apple">
+                        <div class="link-icon">
+                            <i class="fab fa-apple"></i>
+                        </div>
+                        <span class="link-label">iTunes / Apple Music</span>
+                        <a href="https://music.apple.com/us/artist/morgane/1851618524" class="link-overlay" target="_blank" rel="noopener noreferrer"></a>
+                    </div>
+
+                    <div class="link-card streaming" data-platform="soundcloud">
+                        <div class="link-icon">
+                            <i class="fab fa-soundcloud"></i>
+                        </div>
+                        <span class="link-label">SoundCloud</span>
+                        <a href="https://on.soundcloud.com/HSD1lmw4KfbdbvU58m" class="link-overlay" target="_blank" rel="noopener noreferrer"></a>
+                    </div>
+
+                    <div class="link-card streaming" data-platform="soundcloud">
+                        <div class="link-icon">
+                            <i class="fab fa-soundcloud"></i>
+                        </div>
+                        <span class="link-label">SoundCloud 2</span>
+                        <a href="https://on.soundcloud.com/EWvpAUGw9jb4QTrt9p" class="link-overlay" target="_blank" rel="noopener noreferrer"></a>
+                    </div>
+
+                    <div class="link-card streaming" data-platform="tiktok">
+                        <div class="link-icon">
+                            <i class="fab fa-tiktok"></i>
+                        </div>
+                        <span class="link-label">TikTok</span>
+                        <a href="https://www.tiktok.com/@jade._345" class="link-overlay" target="_blank" rel="noopener noreferrer"></a>
+                    </div>
+
+                    <div class="link-card social" data-platform="instagram">
+                        <div class="link-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <span class="link-label">Instagram</span>
+                        <a href="https://www.instagram.com/jade._morgane" class="link-overlay" target="_blank" rel="noopener noreferrer"></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="releases-section">
+                <h2 class="section-title">Latest Releases</h2>
+                <div class="releases-grid" id="releases-grid">
+                </div>
+            </section>
+        </main>
+
+        <section class="email-section">
+            <div class="email-wrapper" id="email-wrapper">
+                <i class="fas fa-envelope email-icon"></i>
+                <span class="email-text" id="email-text">Morgane_Genesis@protonmail.com</span>
+                <div class="copy-feedback" id="copy-feedback">Copied</div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; <span id="current-year"></span> All rights reserved</p>
+        </footer>
+
+        <canvas id="particles-canvas"></canvas>
+        <div class="stars-container"></div>
+    </div>
+
+    <div class="release-modal" id="release-modal">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-cover">
+                <img id="modal-cover-img" src="" alt="Cover">
+            </div>
+            <div class="modal-info">
+                <h3 class="modal-title" id="modal-title"></h3>
+                <div class="modal-platforms" id="modal-platforms">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/script.js?v=1"></script>
+</body>
+</html>
+
