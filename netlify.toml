@@ -1,3 +1,50 @@
 [build]
   publish = "."
 
+[[redirects]]
+  from = "/spotify"
+  to = "https://open.spotify.com/intl-fr/artist/6a33TynljhV7QMa57EpWaW"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/deezer"
+  to = "https://link.deezer.com/s/31AvajAoGuZqBhzoPx6vh"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/youtube"
+  to = "https://www.youtube.com/channel/UCY4shSUWwNGPQAl6O5G2D5w"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/apple"
+  to = "https://music.apple.com/us/artist/morgane/1851618524"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/soundcloud"
+  to = "https://on.soundcloud.com/HSD1lmw4KfbdbvU58m"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/tiktok"
+  to = "https://www.tiktok.com/@jade._345"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/instagram"
+  to = "https://www.instagram.com/jade._morgane"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
